@@ -1,0 +1,352 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+\documentclass[letterpaper,10pt]{article}  % Changed from 2pt to 10pt (standard size)
+\input{particulars}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{anyfontsize}  % Added for flexible font sizing
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+%----------FONT SIZE OPTIONS----------
+% Uncomment ONE of these lines to set global font size:
+% \newcommand{\globalfontsize}{\tiny}           % Very very small
+% \newcommand{\globalfontsize}{\scriptsize}    % Very small
+% \newcommand{\globalfontsize}{\footnotesize}  % Small
+% \newcommand{\globalfontsize}{\small}         % Slightly small
+% \newcommand{\globalfontsize}{\normalsize}    % Normal (default)
+% \newcommand{\globalfontsize}{\large}         % Large
+
+% OR use custom font size (uncomment and adjust):
+% \newcommand{\globalfontsize}{\fontsize{8}{9.5}\selectfont}   % 8pt font, 9.5pt line spacing
+\newcommand{\globalfontsize}{\fontsize{8}{10}\selectfont}  % 9pt font, 10.5pt line spacing
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\mysection}[1]{
+\vspace{-7pt}
+\section{#1}
+}
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\describe}[2]{
+    \csname #1@#2\endcsname
+}
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{+1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\[3pt]
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\vcenter{\hbox{\tiny$\bullet$}}$]}\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\titlesection{
+\begin{center} 
+    {\Huge \scshape \ Yash\ Kumar\ Saini } \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 6378821736\ \hspace{1em}
+    \href{mailto:syash6662@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{syash6662@gmail.com}}\ \hspace{1em}
+     \href{https://www.linkedin.com/in/yash-saini-/}{\raisebox{-0.2\height}\faLinkedin\ \underline{\ yashlinkedin}}  ~
+    \href{https://github.com/Yash0030}{\raisebox{-0.2\height}\faGithub\ \underline{yashgithub}}
+    \vspace{-8pt}
+\end{center}
+}
+
+\begin{document}
+\globalfontsize  % Apply the selected font size
+\titlesection
+
+%-----------EDUCATION-----------%
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading{Indian Institute of Information Technology, Nagpur }
+      {Aug 2023 \ -- May 2027}
+      {Bachelor of Technology, Computer Science Engineering (Data Science and Analytics)}{CGPA - 8.27}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------% 
+
+% \mysection{Experience}
+%   \resumeSubHeadingListStart
+%       \resumeSubheading{Ministry Of Home Affairs}{May 2025 -- Jul 2025}
+%       {\textbf{AI Engineer Intern} \textbf{\textbar{}} \href{https://drive.google.com/file/d/1ADxhnoTQQ936iPEyFuD8YMRiPr_cPbvq/view?usp=drive_link}{Certificate}}{}
+%       \vspace{-2.8pt}
+%   \resumeSubHeadingListEnd
+% \begin{itemize}
+%     \item Supervised fine-tuned a \textbf{wav2vec 2.0–based speech-to-text model} for \textbf{Hindi audio transcription and threat analysis}, leveraging real-world acoustic samples to improve temporal and phonetic pattern recognition
+%     \vspace{-2pt}
+%     \item Achieved a \textbf{12\% improvement in recall} and a \textbf{10\% gain in overall F1-score} by refining feature extraction and training workflows within an MLOps pipeline using Python, TensorFlow, and PyTorch
+% \end{itemize}
+%   \resumeSubHeadingListStart
+%       \resumeSubheading{Eli Lilly And Company}{June 2026 -- Present}
+%       {\textbf{SDE Intern} \href{https://drive.google.com/file/d/1ADxhnoTQQ936iPEyFuD8YMRiPr_cPbvq/view?usp=drive_link}{}}{}
+%       \vspace{-2.8pt}
+%   \resumeSubHeadingListEnd
+% \begin{itemize}
+%     \item Developing and deploying backend workflows using \textbf{Python and AWS services}, focusing on writing clean code, debugging and integrating APIs.
+%     \vspace{-2pt}
+%     \item Working with \textbf{Git, REST APIs, and cloud-based architectures} to build and optimize scalable features with attention to performance and reliability.
+% \end{itemize}
+\mysection{Experience}
+  \resumeSubHeadingListStart
+   \resumeSubheading{Eli Lilly And Company}{June 2026 -- Present}
+      {\textbf{SDE Intern}}{}
+      \resumeItemListStart
+        \resumeItem{Developing and deploying backend workflows using \textbf{Python and AWS services}, focusing on writing clean code, debugging and integrating APIs.}
+        \resumeItem{Working with \textbf{Git, REST APIs, Docker, and CI/CD workflows} to develop, test, and deploy scalable backend features with a focus on performance and reliability.}
+      \resumeItemListEnd
+      
+      \resumeSubheading{Ministry Of Home Affairs}{May 2025 -- Jul 2025}
+{\textbf{AI Engineer Intern} \textbf{\textbar{}} \href{https://drive.google.com/file/d/1ADxhnoTQQ936iPEyFuD8YMRiPr_cPbvq/view?usp=drive_link}{\textcolor{blue}{\underline{Certificate}}}}{}
+      \resumeItemListStart
+        \resumeItem{Supervised fine-tuned a \textbf{wav2vec 2.0–based speech-to-text model} for \textbf{Hindi audio transcription and threat analysis}, leveraging real-world acoustic samples to improve temporal and phonetic pattern recognition}
+        \resumeItem{Achieved a \textbf{12\% improvement in recall} and a \textbf{10\% gain in overall F1-score} by refining feature extraction and training workflows within an MLOps pipeline using Python, TensorFlow, and PyTorch}
+      \resumeItemListEnd
+     
+  \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+
+    
+%-----------PROJECTS-----------% 
+% FIRST
+
+\mysection{Projects}
+\textbf{FixMyRoad: Agentic-AI Based Pothole Detection and Complaint System}
+\href{https://github.com/Yash0030/fixmyroad}{\textbar{} \textcolor{blue}{\underline{\textbf{Code}}}}
+\href{https://fixmyroad-qft0.onrender.com}{\textcolor{blue}{\underline{\textbf{- Live Demo}}}}\\
+\vspace{1pt}
+Architected an end-to-end full-stack web with React-based frontend application leveraging deep learning and computer vision for automated pothole detection with an intelligent priority scoring system based on detection frequency, area estimation, and user engagement metrics.\\
+\vspace{-5pt}
+\begin{itemize}
+\item \textbf{Tools \& technologies used:} Deep Learning, Computer Vision, Multi-Agent AI System, Flask, React.js, JavaScript / TypeScript (basic), Image Processing.
+\vspace{-2pt}
+\item \textbf{Results:} Attained \textbf{92\% detection accuracy} and automated admin workflows using a dual-agent validation system to strengthen reliability.
+\end{itemize}
+
+
+% SECOND
+
+\vspace{-5pt}
+\textbf{RAG-based Multimodal Q\&A System}
+\href{https://github.com/Yash0030/rep6.git}{\textbar{} \textcolor{blue}{\underline{\textbf{Code}}}}\\
+\vspace{1pt}
+Designed a high-performance multimodal Retrieval-Augmented Generation (RAG) system with a FastAPI backend, enabling document analysis across PDFs, DOCs, PPTs, Excel files, images, and text formats.\\
+\vspace{-5pt}
+\begin{itemize}
+\item \textbf{Tools \& technologies used:} FastAPI, Pinecone Vector Database, Multimodal Parsers, Round-Robin API Load Balancing, Semaphore-Based Concurrency, Pytesseract OCR, NLP.
+\vspace{-2pt}
+\item \textbf{Performance:} Delivered \textbf{75\% accuracy} with an optimized response time of \textbf{8 seconds} for \textbf{100 concurrent queries} using parallel processing and advanced retrieval strategies.
+\end{itemize}
+
+
+% THIRD
+
+% \vspace{-3pt}
+% \textbf{AI-powered Sensing in Computer Networks}
+% \href{https://github.com/Yash0030/AI-Powered-Sensing-in-Computer-Networks.git} {\textbar{} {\textbf{Code}}}\\
+% \vspace{1pt}
+% Implemented a Deep Reinforcement Learning (PPO) agent to optimize task offloading decisions (local, edge, cloud) within an NS-3 network simulation, minimizing energy consumption, latency, and carbon emissions.\\
+% \vspace{-5pt}
+% \begin{itemize}
+% \item \textbf{Tools \& technologies used:} Deep Reinforcement Learning (PPO), NS-3 Network Simulator, TensorFlow/Keras, Python, C++, ZMQ.
+% \vspace{-2pt}
+% \item \textbf{Achievement:} Attained \textbf{89.5\% accuracy} in replicating expert policies with \textbf{95\% precision} and \textbf{89.5\% specificity} for local versus offloading decisions.
+% \end{itemize}
+
+\vspace{-3pt}
+\textbf{ChitChat: Anonymous Location-Based Chat Platform}
+\href{https://github.com/Yash0030/PROJECT-C2.git}{\textbar{} \textcolor{blue}{\underline{\textbf{Code}}}}
+\href{https://project-chitchat.vercel.app/}{\textcolor{blue}{\underline{\textbf{- Live Demo}}}}\\
+\vspace{1pt}
+Architected a scalable real-time chat system with location-based group discovery, ephemeral messaging, and distributed event-driven communication.\\
+\vspace{-5pt}
+\begin{itemize}
+\item \textbf{Tools \& technologies used:} React, FastAPI, PostgreSQL, Redis, Socket.io, JWT, Zod.
+\vspace{-2pt}
+\item \textbf{Features:} Enabled WebSocket-based messaging, Redis pub/sub for low-latency communication, and cron-based expiry for groups/messages.
+\end{itemize}
+
+
+%-----------SKILLES-----------% 
+
+\mysection{Technical Skills}
+\textbf{Programming Languages}: Python, Java, C, C++ \\
+\vspace{2pt}
+\textbf{Web Technologies}: HTML, CSS, JavaScript, React.js, TypeScript, Tailwind CSS \\
+\vspace{2pt}
+\textbf{Libraries / Frameworks}: Django, FastAPI, Flask, NodeJS, NumPy, Pandas, Scikit-learn, TensorFlow, Keras, OpenCV, NLTK, LangChain, LangGraph \\
+\vspace{2pt}
+\textbf{Backend Development}: RESTful API Design, JWT Authentication, Role-Based Access Control (RBAC), API Security, Middleware, Request Validation, Error Handling, Async Processing \\
+\vspace{2pt}
+\textbf{Databases}: MySQL, MongoDB, Redis \\
+\vspace{2pt}
+\textbf{Tools}: VS Code, Git, GitHub, Docker, Google Colab, Postman, Power BI, NS-3 \\
+\vspace{2pt}
+\textbf{Coursework}: Data Structures and Algorithms, DBMS, Operating Systems, Computer Networks, Object-Oriented Programming, Machine Learning, Discrete Mathematics \\
+\vspace{2pt}
+\textbf{Core Competencies}: Software Development, Deep Learning, Natural Language Processing, Computer Vision, Generative AI, Large Language Models, Agentic AI, Exploratory Data Analysis, Data Visualization, ETL, Data Pipelines
+
+
+%-----------Achievements-----------% 
+
+% \vspace{-16pt}
+\mysection{Achievements}
+\textbf{Competition Awards:}
+\vspace{-3pt}
+\begin{itemize}
+\item \textbf{1st Place Winner -} Bioinformatics: A Machine Learning-Based Hackathon at IIIT Nagpur TantraFiesta 2025 - 
+\href{https://drive.google.com/file/d/16v7WReH93eGHdTxvOXEf7nBYnGKDC8LN/view?usp=sharing}{\textcolor{blue}{\underline{Certificate}}}
+
+\vspace{-2pt}
+
+\item \textbf{1st Place Winner -} CodeCraft: An IoT-Based Development Competition at NIT Trichy -
+\href{https://drive.google.com/file/d/1mJglco0o0uzFazz1Ko8KVC16SwBELV7k/view?usp=drive_link}{\textcolor{blue}{\underline{Certificate}}}\\
+\vspace{-2pt}
+\item \textbf{Finalist} – GrabHack Campus Edition (National Hackathon), selected among 4000+ participants across India.
+
+% \vspace{-2pt}
+% \item \textbf{1st Place Winner -} Cryptic Hunt: An Algorithm-Based Coding Event at IIIT Nagpur TantraFiesta 2023
+%  -
+% \href{https://drive.google.com/file/d/1KTpT8YmYYjh14nn_M2OQbOnFlf-ezZfJ/view?usp=drive_link}{\raisebox{-0.2\height}\ {{Certificate}}}\\
+\end{itemize}
+% \vspace{-2pt}
+\textbf{Coding Proficiency:}
+\vspace{-3pt}
+\begin{itemize}
+\item \textbf{CodeChef:} 3 Stars Rating with Peak Rating of 1774 - 
+{\href{https://www.codechef.com/users/lonely_dust_62}{\textcolor{blue}{\underline{Profile}}}}\\
+\vspace{-2pt}
+
+\item \textbf{Coding Practice:} Solved 500+ algorithmic problems across multiple coding platforms -
+{\href{https://leetcode.com/u/syash6662/}{\textcolor{blue}{\underline{Profile}}}}
+\end{itemize}
+
+
+
+%-----------Certifications-----------% 
+
+% \section{Certifications}
+% \textbf{Supervised Machine Learning: Regression and Classification} - Stanford University \& DeepLearning.AI -
+% \href{https://drive.google.com/file/d/1K2jG60ysmaOJXqf3unK6JdEsJuAMG7yu/view?usp=drive_link}{\raisebox{-0.2\height}\ {{Certificate}}}\\
+% \vspace{2pt}
+% \textbf{Unsupervised Learning, Recommenders, Reinforcement Learning} - Stanford University \& DeepLearning.AI - 
+% \href{https://drive.google.com/file/d/1zJm1oB8PR49CwpUDhqzRiIZPB5dChOIc/view?usp=drive_link}{\raisebox{-0.2\height}\ {{Certificate}}}\\
+% \vspace{2pt}
+% \textbf{Advanced Learning Algorithms} - Stanford University \& DeepLearning.AI - 
+% \href{https://drive.google.com/file/d/14SBvcumnm_wrSvheSXG4cshptdD3jjkD/view?usp=drive_link}{\raisebox{-0.2\height}\ {{Certificate}}}\\
+
+% \mysection{Positions of Responsibility}
+% \textbf{Co-Founder of IIIT Nagpur E-Sports Club}
+% \begin{itemize}
+% \vspace{-3pt}
+% \item Directed a core team of \textbf{15 members} as Co-Lead of the E-Sports Club, IIIT Nagpur.
+% \vspace{-6pt}
+% \item Spearheaded marketing, PR, and event coordination, driving participation from \textbf{800+ attendees} across multiple events.
+
+% \end{itemize}
+% \vspace{-2pt}
+% \textbf{Co-Founder of Code O' Phile a Coding Community}
+% \vspace{-3pt}
+% \begin{itemize}
+% \item Orchestrated a nationwide coding quiz on Unstop, engaging \textbf{400+ students} from multiple institutions.
+% \vspace{-6pt}
+% \end{itemize}
+
+% \vspace{2pt}
+% \textbf{Unsupervised Learning, Recommenders, Reinforcement Learning} - Stanford University \& DeepLearning.AI - 
+% \href{https://drive.google.com/file/d/1zJm1oB8PR49CwpUDhqzRiIZPB5dChOIc/view?usp=drive_link}{\raisebox{-0.2\height}\ {{Certificate}}}\\
+% \vspace{2pt}
+% \textbf{Advanced Learning Algorithms} - Stanford University \& DeepLearning.AI - 
+% \href{https://drive.google.com/file/d/14SBvcumnm_wrSvheSXG4cshptdD3jjkD/view?usp=drive_link}{\raisebox{-0.2\height}\ {{Certificate}}}\\
+
+ 
+
+
+ \end{document}

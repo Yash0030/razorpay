@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in LaTeX
+% Based on the "Jake's Resume" template layout
+% Compile with pdfLaTeX  (letterpaper). Switch to a4paper in \documentclass if needed.
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+%----------- Link color -----------
+\definecolor{linkblue}{RGB}{0,0,238}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkblue,
+  linkcolor=linkblue,
+  citecolor=linkblue
+}
+
+%----------- Page style -----------
+\pagestyle{fancy}
+\fancyhf{}                        % clear header/footer
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting (title case, NOT small caps, with a rule underneath)
+\titleformat{\section}{
+  \vspace{-2pt}\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable / ATS parsable
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+%-------------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Two-line subheading: title + right-aligned date, then italic subtitle
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% One-line heading: left content + right-aligned date
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Open-circle bullets (matches the "◦" in the reference)
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\circ$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\small$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, topsep=2pt, itemsep=3.5pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge Ishika Aggarwal} \\ \vspace{3pt}
+    \small
+    Bangalore, India $|$
+    \href{mailto:ishikaaggarwal749@gmail.com}{ishikaaggarwal749@gmail.com} $|$
+    9929785007 $|$
+    \href{https://www.linkedin.com/in/your-linkedin}{LinkedIn} $|$
+    \href{https://github.com/your-github}{GitHub} $|$
+    \href{https://your-portfolio.com}{Portfolio}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology, Nagpur}{Nov 2022 -- June 2026}
+      {B.Tech Computer Science Engineering \quad (CGPA: 8.2)}{}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework:} Operating Systems, Data Structures and Algorithms, Computer Networks, Object-Oriented Programming, Theory of Computation, Database Management Systems, Design Thinking.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNOLOGIES-----------
+\section{Technologies}
+  \resumeSubHeadingListStart
+    \item[]
+    \small{
+      \textbf{Languages:} C, C++, Java, Python, Go, JavaScript, TypeScript \\ \vspace{1pt}
+      \textbf{Backend \& APIs:} RESTful APIs, Node.js, Express.js, Flask, FastAPI \\ \vspace{1pt}
+      \textbf{Databases \& Search:} MySQL, MongoDB, OpenSearch \\ \vspace{1pt}
+      \textbf{Cloud \& DevOps:} Docker, CloudWatch, Datadog, Git, GitHub, GitLab, CI/CD, Linux, Azure, AWS \\ \vspace{1pt}
+      \textbf{Core Concepts:} Object-Oriented Programming, Distributed Systems, Microservices, API Integration, Unit Testing, System Design, Operating Systems
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Software Development Engineer --- Agoda}}{August 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Part of Agoda's \textbf{Affiliate Engineering team}, working on backend systems and APIs supporting affiliate integrations.}
+        \resumeItem{Developing a partner support agent for Agoda's Affiliate platform to diagnose mapping and availability issues, surface root causes through an internal UI, and recommend actionable resolutions to affiliate team members.}
+        \resumeItem{\textbf{Tech \& Tools:} Scala, SuperSet, GitLab, Kibana, OrbStack}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Software Development Engineer Intern --- Amazon} \href{https://your-amazon-certificate}{Certificate}}{Jan 2026 -- Jun 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{Enhanced invoice download functionality} on the Amazon Ads Billing Profile page by replacing the fixed 90-day limit with flexible date range options of 30, 60, 90, 180, and 365 days, driving \textbf{888+ downloads within 7 days of launch}.}
+        \resumeItem{\textbf{Improved invoice search functionality} by enabling partial invoice number matching, enhancing invoice discoverability and supporting 900+ search operations within 10 days of release.}
+        \resumeItem{\textbf{Migrated a backend service to JDK 17}, resolving compatibility issues and validating service stability to improve maintainability and long-term platform reliability.}
+        \resumeItem{\textbf{Tech \& Tools:} Java, JDK 17, TypeScript, OpenSearch, CloudWatch, Weblab}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Software Engineering Intern --- Grab} \href{https://your-grab-certificate}{Certificate}}{July 2025 -- Jan 2026}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Datadog dashboards} to monitor API success rates, request failures, latency, and service health, improving system observability by 25\% for on-call debugging.}
+        \resumeItem{Developed \textbf{Medallion architecture data pipelines} to transform Bronze-layer data into Silver tables.}
+        \resumeItem{Designed and implemented a \textbf{background worker in Go} to poll payment status every 10 seconds, ensuring timely synchronization of payment data in the database.}
+        \resumeItem{\textbf{Tech \& Tools:} Go, Python, Datadog, Kibana, Airflow}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Sensor Fault Prediction} --- \textbf{Tech Stack:} Python, Scikit-learn, Pandas, NumPy, Matplotlib}{}
+      \resumeItemListStart
+        \resumeItem{Built a supervised ML pipeline to classify semiconductor wafers as ``Good'' or ``Bad'' using 590 sensor features.}
+        \resumeItem{Achieved 92\% test accuracy and reduced defect detection time compared to manual inspection.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Tomato --- A Food Delivery WebApp} --- \textbf{Tech Stack:} MERN Stack, Stripe API, GitHub}{}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack food ordering platform with menu browsing, cart management, and real-time order placement.}
+        \resumeItem{Integrated Stripe API for secure payments, successfully processing 100+ test transactions without errors.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \item[]
+    \resumeItemListStart
+      \resumeItem{Selected for the \textbf{Google Student Upskilling Program}, ranking among the top 500 out of 50,000+ applicants. \href{https://your-certificate-link}{Certificate}.}
+      \resumeItem{Selected among the \textbf{top 450 out of 40,000+ participants} in \textbf{Meesho ScriptedByHer'25}.}
+      \resumeItem{\textbf{Semi-Finalist} at \textbf{Flipkart Grid 7.0}, ranking among the top 500 out of 1.5 lakh+ participants. \href{https://your-certificate-link}{Certificate}.}
+      \resumeItem{Selected for \textbf{Amazon ML Summer School}, ranking among the top 3000 out of 2 lakh+ registrations.}
+      \resumeItem{\textbf{Knight on LeetCode}, ranked in the top 4\%. \href{https://leetcode.com/your-profile}{LeetCode}.}
+      \resumeItem{\textbf{3-Star coder on CodeChef}. \href{https://www.codechef.com/users/your-profile}{CodeChef}.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
